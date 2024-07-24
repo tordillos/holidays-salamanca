@@ -17,6 +17,9 @@ dependencies:
   '@rn-primitives/slot':
     specifier: ^1.0.3
     version: 1.0.3(react-native-web@0.19.12)(react-native@0.74.3)(react@18.2.0)
+  '@shopify/flash-list':
+    specifier: 1.6.4
+    version: 1.6.4(@babel/runtime@7.24.8)(react-native@0.74.3)(react@18.2.0)
   '@tanstack/react-query':
     specifier: ^5.51.11
     version: 5.51.11(react@18.2.0)
@@ -3283,6 +3286,20 @@ packages:
     dependencies:
       component-type: 1.2.2
       join-component: 1.1.0
+    dev: false
+
+  /@shopify/flash-list@1.6.4(@babel/runtime@7.24.8)(react-native@0.74.3)(react@18.2.0):
+    resolution: {integrity: sha512-M2momcnY7swsvmpHIFDVbdOaFw4aQocJXA/lFP0Gpz+alQjFylqVKvszxl4atYO2SNbjxlb2L6hEP9WEcAknGQ==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '*'
+      react-native: '*'
+    dependencies:
+      '@babel/runtime': 7.24.8
+      react: 18.2.0
+      react-native: 0.74.3(@babel/core@7.24.9)(@babel/preset-env@7.24.8)(@types/react@18.2.79)(react@18.2.0)
+      recyclerlistview: 4.2.0(react-native@0.74.3)(react@18.2.0)
+      tslib: 2.4.0
     dev: false
 
   /@sideway/address@4.1.5:
@@ -9847,6 +9864,19 @@ packages:
       source-map: 0.6.1
       tslib: 2.6.3
 
+  /recyclerlistview@4.2.0(react-native@0.74.3)(react@18.2.0):
+    resolution: {integrity: sha512-uuBCi0c+ggqHKwrzPX4Z/mJOzsBbjZEAwGGmlwpD/sD7raXixdAbdJ6BTcAmuWG50Cg4ru9p12M94Njwhr/27A==}
+    peerDependencies:
+      react: '>= 15.2.1'
+      react-native: '>= 0.30.0'
+    dependencies:
+      lodash.debounce: 4.0.8
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-native: 0.74.3(@babel/core@7.24.9)(@babel/preset-env@7.24.8)(@types/react@18.2.79)(react@18.2.0)
+      ts-object-utils: 0.0.5
+    dev: false
+
   /reflect.getprototypeof@1.0.6:
     resolution: {integrity: sha512-fmfw4XgoDke3kdI6h4xcUz1dG8uaiv5q9gcEwLS4Pnth2kxT+GZ7YehS1JTMGBQmtV7Y4GFGbs2re2NqhdozUg==}
     engines: {node: '>= 0.4'}
@@ -10963,6 +10993,10 @@ packages:
   /ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
+  /ts-object-utils@0.0.5:
+    resolution: {integrity: sha512-iV0GvHqOmilbIKJsfyfJY9/dNHCs969z3so90dQWsO1eMMozvTpnB1MEaUbb3FYtZTGjv5sIy/xmslEz0Rg2TA==}
+    dev: false
+
   /tsconfig-paths@3.15.0:
     resolution: {integrity: sha512-2Ac2RgzDe/cn48GvOe3M+o82pEFewD3UPbyoUHHdKasHwJKjds4fLXWf/Ux5kATBKN20oaFGu+jbElp1pos0mg==}
     dependencies:
@@ -10971,6 +11005,10 @@ packages:
       minimist: 1.2.8
       strip-bom: 3.0.0
     dev: true
+
+  /tslib@2.4.0:
+    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+    dev: false
 
   /tslib@2.6.3:
     resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
