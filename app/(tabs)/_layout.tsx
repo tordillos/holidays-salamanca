@@ -2,6 +2,8 @@ import React from "react";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Link, Tabs } from "expo-router";
 import { Pressable } from "react-native";
+import { CalendarSearch } from "@/components/icons/calendar-search";
+import { Info } from "@/components/icons/info";
 
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabBarIcon(props: {
@@ -17,18 +19,18 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Tab One",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: "Féstivos",
+          tabBarIcon: ({ color }) => (
+            <CalendarSearch color={color} height={25} width={25} />
+          ),
           headerRight: () => (
-            <Link href="/modal" asChild>
+            <Link href="/about" asChild>
               <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="info-circle"
-                    size={25}
-                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
+                <Info
+                  width={25}
+                  height={25}
+                  className="mr-6 text-black active:opacity-50"
+                />
               </Pressable>
             </Link>
           ),
